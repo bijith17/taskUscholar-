@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE CO & BAKE || CHOOSE KOZHIKODE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body class="bg-gray-100 h-screen overflow-x-hidden">
+
+    <!-- Navbar Container -->
+    <nav class="bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+
+                <!-- Logo -->
+                <div class="flex-shrink-0 text-gray-200">
+                    <a href="#">
+                        <div class="logo font-thin transition duration-300 animate-bounce-in">
+                            THE CO & BAKE
+                            <br> CHOOSE KOZHIKODE
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Menu Button (Mobile) -->
+                <div class="md:hidden">
+                    <button id="menuToggle" class="text-gray-200 focus:outline-none transition duration-300">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Menu -->
+                <div class="hidden md:flex space-x-4 transition duration-300">
+                    <a href="#" class="text-gray-200 hover:text-gray-500 px-3 py-2 rounded-md text-md font-medium transition duration-300 animate-fade-in">HOME</a>
+                    <a href="#" class="text-gray-400 hover:text-gray-400 px-3 py-2 rounded-md text-md font-medium transition duration-300 animate-fade-in">SEARCH</a>
+                    <a href="#" class="text-gray-200 hover:text-gray-500 px-3 py-2 rounded-md text-md font-medium transition duration-300 animate-fade-in">PASTRY</a>
+                    <a href="menus.html" class="text-gray-200 hover:text-gray-500 px-3 py-2 rounded-md text-md font-medium transition duration-300 animate-fade-in">MENUS</a>
+                    <a href="#" class="text-gray-200 hover:text-gray-500 px-3 py-2 rounded-md text-md font-medium transition duration-300 animate-fade-in">ABOUT</a>
+                    <a href="#" class="text-gray-200 hover:text-gray-500 px-3 py-2 rounded-md text-md font-medium transition duration-300 animate-fade-in">CONTACT</a>
+                    <a href="#" class="text-gray-200 hover:text-gray-500 px-3 py-2 rounded-md text-md font-medium transition duration-300 animate-fade-in">PRIVACY POLICY</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="relative z-10 hidden md:hidden transition duration-300 animate-fade-in">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-900 bg-opacity-30">
+                <a href="#" class="block text-gray-200 hover:text-gray-500 px-3 py-2 rounded-md text-base font-medium transition duration-300">HOME</a>
+                <a href="#" class="block text-gray-500 hover:text-gray-500 px-3 py-2 rounded-md text-base font-medium transition duration-300">SEARCH</a>
+                <a href="#" class="block text-gray-200 hover:text-gray-500 px-3 py-2 rounded-md text-base font-medium transition duration-300">PASTRY</a>
+                <a href="menus.html" class="block text-gray-200 hover:text-gray-500 px-3 py-2 rounded-md text-base font-medium transition duration-300">MENUS</a>
+                <a href="#" class="block text-gray-200 hover:text-gray-500 px-3 py-2 rounded-md text-base font-medium transition duration-300">ABOUT</a>
+                <a href="#" class="block text-gray-200 hover:text-gray-500 px-3 py-2 rounded-md text-base font-medium transition duration-300">CONTACT</a>
+                <a href="#" class="block text-gray-200 hover:text-gray-500 px-3 py-2 rounded-md text-base font-medium transition duration-300">PRIVACY POLICY</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="flex items-center justify-center h-full text-gray-200">
+        <div class="w-full max-w-lg px-4">
+            <input type="text" class="pl-10 w-full h-16 bg-transparent p-4 text-5xl placeholder-gray-300 focus:outline-none transition duration-300 animate-fade-in" placeholder="Start typing....">
+            <p class="text-center animate-fade-in">Press enter to begin your search</p>
+        </div>
+    </main>
+
+    <!-- footer menu  -->
+    <footer class="bg-[#262626] text-gray-200 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row justify-between">
+
+                <!-- Logo -->
+                <div class="mb-6 lg:mb-0">
+                    <a href="#" class="text-lg font-bold">
+                        <div class="transition duration-300 animate-bounce-in">
+                            THE CO & BAKE
+                            <br> CHOOSE KOZHIKODE
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Menu -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 lg:mb-0">
+                    <a href="#" class="hover:text-gray-400 transition duration-300 animate-fade-in">HOME</a>
+                    <a href="#" class="hover:text-gray-400 transition duration-300 animate-fade-in">SEARCH</a>
+                    <a href="#" class="hover:text-gray-400 transition duration-300 animate-fade-in">PASTRY</a>
+                    <a href="menus.html" class="hover:text-gray-400 transition duration-300 animate-fade-in">MENUS</a>
+                    <a href="#" class="hover:text-gray-400 transition duration-300 animate-fade-in">ABOUT</a>
+                    <a href="#" class="hover:text-gray-400 transition duration-300 animate-fade-in">PRIVACY POLICY</a>
+                </div>
+
+                <!-- Contact and Search -->
+                <div class="flex flex-col">
+                    <h2 class="text-lg mb-2 animate-fade-in">Contact</h2>
+                    <div class="flex border border-1 w-64 sm:w-full transition duration-300 animate-fade-in">
+                        <input type="text" placeholder="www.abdc@gmail.com" class="bg-transparent px-4 py-2 focus:outline-none transition duration-300">
+                        <button class="text-white px-4 py-2 transition duration-300">
+                            <i class="fa-regular fa-circle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        document.getElementById('menuToggle').addEventListener('click', function () {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+            menu.classList.add('transition', 'duration-300', 'animate-fade-in');
+        });
+    </script>
+
+</body>
+
+</html>
